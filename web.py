@@ -16,6 +16,8 @@ st.title("My Todo App")
 st.subheader("This is my todo app")
 st.write("This app is to increase your productivity")
 
+st.text_input(label="", placeholder="Add new todo....",
+              on_change=add_todo, key="new_todo")
 # listing the updated items in the checkbox
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
@@ -27,8 +29,7 @@ for index, todo in enumerate(todos):
         # Streamlit immediately queues the script to rerun.
 
 # connecting the input text to todo when entered reflects/adds to todos in the web app
-st.text_input(label="", placeholder="Add new todo....",
-              on_change=add_todo, key="new_todo")
+
 print("Hello")
 
 

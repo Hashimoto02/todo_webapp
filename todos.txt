@@ -2,3 +2,4 @@ python
 selenium
 kotlin
 html
+django
